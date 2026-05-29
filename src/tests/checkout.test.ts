@@ -4,7 +4,6 @@ import { resetStock, getProductById } from '../backend/mockDb';
 
 describe('Checkout API Route', () => {
   beforeEach(() => {
-    // Reseta o estado do banco em memória antes de cada teste
     resetStock();
   });
 
@@ -44,7 +43,6 @@ describe('Checkout API Route', () => {
   });
 
   test('Deve retornar 422 Unprocessable Entity se o estoque for insuficiente', async () => {
-    // Produto 1 possui 20 de estoque inicial
     const req = createRequest({ productId: '1', quantity: 21 });
     const res = await POST(req);
     expect(res.status).toBe(422);
@@ -75,7 +73,6 @@ describe('Checkout API Route', () => {
     expect(json.orderId).toBeDefined();
     expect(json.status).toBe('CONFIRMED');
 
-    // Verifica se o estoque foi atualizado (20 - 2 = 18)
     const updatedProduct = getProductById('1');
     expect(updatedProduct?.stock).toBe(18);
   });
