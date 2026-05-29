@@ -51,15 +51,16 @@ export function CheckoutForm({ initialProducts }: { initialProducts: Product[] }
   };
 
   return (
-    <Box maxW="md" mx="auto" mt={10} p={6} borderWidth={1} borderRadius="lg" boxShadow="lg">
-      <Heading size="md" mb={6}>Finalizar Compra</Heading>
+    <Box as="main" p={8}>
+      <Box maxW="md" mx="auto" mt={10} p={6} borderWidth={1} borderRadius="lg" boxShadow="lg">
+        <Heading size="md" mb={6}>Finalizar Compra</Heading>
 
-      {message && (
-        <Alert status={message.type} mb={6} borderRadius="md">
-          <AlertIcon />
-          <Text fontSize="sm">{message.text}</Text>
-        </Alert>
-      )}
+        {message && (
+          <Alert status={message.type} mb={6} borderRadius="md">
+            <AlertIcon />
+            <Text fontSize="sm">{message.text}</Text>
+          </Alert>
+        )}
 
       <form onSubmit={handleSubmit}>
         <VStack spacing={4}>
@@ -106,6 +107,7 @@ export function CheckoutForm({ initialProducts }: { initialProducts: Product[] }
           </Button>
         </VStack>
       </form>
+      </Box>
     </Box>
   );
 }
