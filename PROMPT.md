@@ -1,6 +1,6 @@
 # Registro de Prompts de IA Utilizados
 
-Ao longo do desenvolvimento deste projeto, os seguintes prompts foram utilizados para orientar o agente de Inteligência Artificial(Antigravity):
+Ao longo do desenvolvimento deste projeto, os seguintes prompts foram utilizados para orientar o agente de Inteligência Artificial (Antigravity):
 
 ## Prompt 1: Setup Inicial & Mock
 > Estamos iniciando um projeto de fluxo de checkout para a CaseCellShop usando Next.js (App Router) com TypeScript. 
@@ -85,5 +85,5 @@ Ao longo do desenvolvimento deste projeto, os seguintes prompts foram utilizados
 
 >É uma prática recomendada, pois ajuda a pensar sobre os casos de uso e garantir que a rota seja implementada corretamente. Além disso, os testes podem ser usados para documentar a rota e garantir que ela seja usada corretamente."
 
->Sendo assim,gostaria de verificar se minhas respostas fazem sentido e lembrar de alguns conceitos como o que cada código na API como 200, 201, 401, 404, 502 detalha sobre a resposta. Além disso, eu estou com dúvida se minha justificativa de e2e e jest por exemplo, para códigos unitários ou até o uso de CI/CD com um teste automatizado para o github actions."
+>Sendo assim,gostaria de verificar se minhas respostas fazem sentido e lembrar de alguns conceitos como o que cada código na API como 200, 201, 401, 404, 502 detalha sobre a resposta. Além disso, eu estou com dúvida se minha justificativa de e2e e jest por exemplo, para códigos unitários ou até o uso de CI/CD com um teste automatizado para o github actions fazem sentido para a pergunta."
 
